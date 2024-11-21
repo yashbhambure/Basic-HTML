@@ -1,0 +1,97 @@
+<html>
+<title>homepage::music recommendation </title>
+<head>
+<style>
+#footer{
+width:auto;
+height:100px;
+margin-top:100px;
+}
+#menu{
+width:auto;
+height:100px;
+}
+ul li{
+float:left;
+padding:20px;
+list-style:none;
+}
+ul li a{
+text-decoration:none;
+color:red;
+}
+.img{
+width:48%;
+height:500px;
+margin-top:10px;
+}
+reg{
+width=48%;
+height:500px;
+margin-top:10px;
+}
+</style>
+<script type="text/javascript">
+function validate()
+{
+var a=document.reg.mno.value;
+var b=document.reg.mno.value;
+if(b.length<8||length>15
+}
+{
+alert("first name should be minimum 8 characters or maximum 15 characters")
+document.reg.mno.focus();
+return false;
+}
+if(isNaN(a))
+{alert("mobile number should contain only numbers")
+document.reg.mno.focus();
+return false;
+}
+if(a.length!=10)
+{
+alert("mobile number should be 10 numbers only")
+document.reg.mno.focus();
+return false;
+}
+if(a.charAt(0)<6)
+{
+alert("mobile number should start with 9 or 8 or 7 or 6")
+document.reg.mno.focus();
+return false;
+}
+return true:
+</script>
+</head>
+<body bgcolor="yellow"
+<h1 align="center">Emotion based music recommendation</h1>
+<div id="menu">
+<ul>
+<li><a href="HTML CSS.html">homepage</a></li>
+<li><a href="HTML CSS.html">Register</a></li>
+<li><a href="HTML CSS.html">Login</a></li>
+<li><a href="HTML CSS.html">About us</a></li>
+<li><a href="HTML CSS.html">Contact us</a></li>
+</ul>
+</div>
+<div class="img">
+<center><img src="Galaxy.jpeg" width=500px height=500px></center>
+</div>
+<div class="reg">
+<h2 align="center">Welcome to Registration</h2>
+<table align="center" cellspacing=10px cellpadding=10px border="2px">
+<form name="reg" action="db.html" method="post" onsubmit="return validate()">
+<tr><td>First Name</td><td><input type="text" required name="fname"></td></tr>
+<tr><td>Last Name</td><td><input type="text" required name="lname"></td></tr>
+<tr><td>Email ID</td><td><input type="Email" required name="Emailid"></td></tr>
+<tr><td>Mobile Number</td><td><input type="text" required name="mno"></td></tr>
+<tr><td>Password</td><td><input type="password" required name="pwd"></td></tr>
+<tr><td><input type="submit"value="Register"></td><td><input type="reset"></td></tr>
+</form>
+</table>
+</div>
+<div id="footer" align="center">
+<p align="center">developed by Yash <a href="https://www.aurora.edu.in> aurora university</a> freshman year</p>
+</div>
+</body>
+</html>
